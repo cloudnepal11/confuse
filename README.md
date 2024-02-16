@@ -5,6 +5,9 @@ Create S3 Bucket
 - Name (harus unik)
 - Region
 - Block ceklis
+- ceklis ( i acknowledge)
+- disable
+- enable
 
 Create IAM Role
 - Open IAM
@@ -32,16 +35,7 @@ Add IAM Role to EC2
 - Pilih IAM role yang sudah dibuat
 
 -------------------------------------
-Menghubungkan EC2 dengan Bucket
-- buka ec2
-- aws s3 ls (untuk melihat semua s3)
-- aws s3 ls s3://namabucket (untuk melihat isi bucket)
-- aws s3 cp test.txt s3://namabucket (perintah untuk copy ke bucket)
-- aws s3 cp s3://namabucket/namafile .  (untuk mendownload file dari bucket)
-
-**********************************
-Mendapatkan Akseskey id
-- buka IAM
+Mendapatkan Akseskey id ( user)
 - klik user
 - klik add user
 - isi user name, next
@@ -54,7 +48,18 @@ Mendapatkan Akseskey id
 - Application Runnning on AWS
 - Ceklis I Understand
 - Create Access Key
+- JANGANG LANGSUNG CLOSE!!!
 - Copy Access Key dan Secret Access Key, pastekan di notepad, save
+- AKIA4BSDKHQ5NNMCPAAN
+belgCiEGkFRVC6Fv6UGbmdiEYBGzZerDgunDUIjQ
+  
+---------------------------------------------
+Menghubungkan EC2 dengan Bucket
+- buka ec2
+- aws s3 ls (untuk melihat semua s3)
+- aws s3 ls s3://namabucket (untuk melihat isi bucket)
+- aws s3 cp test.txt s3://namabucket (perintah untuk copy ke bucket)
+- aws s3 cp s3://namabucket/namafile .  (untuk mendownload file dari bucket)
 
 ***********************************
 Mounting S3 Bucket
